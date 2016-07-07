@@ -582,6 +582,7 @@ TDXHQ_API int TdxHq_GetSecurityQuotes(int connectID,WORD Market, char* Zqdm, WOR
 				for( int i = 0 ; i< Count; i++ )
 				{
 					int year=0,month=0,day=0,hour=15,minute=0;
+					int Category = 4; //编译错误，暂时加入 @markqiu
 					if( ( Category < 4) || Category==7 || Category==8 )
 					{
 						//处理日期
